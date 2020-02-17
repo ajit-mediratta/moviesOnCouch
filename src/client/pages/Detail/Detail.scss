@@ -1,0 +1,111 @@
+.contentSection {
+  position: relative;
+}
+.section {
+  margin-bottom: 24px;
+}
+.titleSection {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+  background-color: #009688;
+  display: table;
+  label {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 300;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 24px;
+  }
+}
+.detailCard {
+  padding: 0 24px 48px 24px;
+}
+.leftCardSection {
+  float: left;
+  width: 128px;
+}
+.rightCardSection {
+  float: left;
+  padding: 0 24px;
+}
+.clear {
+  clear: both;
+}
+.imageWrapper {
+  display: table;
+}
+.imageContainer {
+  width: 128px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.itemImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+.heading1 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #747474;
+  margin-bottom: 10px;
+}
+.heading2 {
+  font-size: 24px;
+  font-style: oblique;
+  color: #747474;
+  margin-bottom: 20px;
+}
+.heading3 {
+  font-size: 18px;
+  letter-spacing: 0.42px;
+  color: #747474;
+}
+.heading4 {
+  font-size: 16px;
+  color: #000
+}
+.content {
+  font-size: 12px;
+  color: #747474;
+  letter-spacing: 0.28px;
+}
+.primaryBtn {
+  border: solid 1px #6fcac2;
+  background-color: #86e4db;
+  text-align: center;
+  font-size: 12px;
+  color: #757373;
+  text-transform: uppercase;
+  line-height: 16px;
+  padding: 6px;
+}
+.btnMarkFav {
+  width: 100px;
+  margin-top: 16px;
+}
+.dividor {
+  height: 1px;
+  background-color: #6a6767;
+  margin-bottom: 12px;
+}
+.trailerSection {
+  margin-left: 24px;
+}
+.trailerLink {
+  display: table;
+  text-decoration: none;
+}
+.trailerIcon {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 24px;
+  color: #000;
+}
+.trailerTitle {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 24px;
+}

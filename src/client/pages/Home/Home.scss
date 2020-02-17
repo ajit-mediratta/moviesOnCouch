@@ -1,0 +1,74 @@
+.contentSection {
+  width: 100%;
+}
+.contentWrapper {
+  overflow: auto;
+}
+.imageWrapper {
+  display: table;
+  float: left;
+  margin-right: 2px;
+  width: 49%;
+}
+.imageContainer {
+  height: 278px;
+  min-height: 278px;
+  max-height: 278px;
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.itemImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+.loadMoreButton {
+  font-size: 32px;
+  color: #212121;
+  display: block;
+  width: 40px;
+  padding: 10px;
+  margin: 20px auto;
+  position: relative;
+  cursor: pointer;
+}
+@media all and (min-width: 1281px) {
+  .imageWrapper {
+    width: 33%;
+  }
+  .imageContainer {
+    height: 482px;
+    min-height: 482px;
+    max-height: 482px;
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1280px) {
+  .imageWrapper {
+    width: 33%;
+  }
+  .imageContainer {
+    height: 482px;
+    min-height: 482px;
+    max-height: 482px;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .imageWrapper {
+    width: 24.5%;
+  }
+}
+
+@media all and (min-width: 641px) and (max-width: 768px) {
+  .imageWrapper {
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 640px) {
+  .imageWrapper {
+    width: 32%;
+  }
+}

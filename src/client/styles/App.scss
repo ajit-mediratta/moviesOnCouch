@@ -1,0 +1,17 @@
+@import "./reset";
+@import "./glueGuide";
+
+.appContainer {
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  margin-top: 64px;
+}
+
+@media all and (min-width: 769px) {
+  .appContainer {
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+  }
+}

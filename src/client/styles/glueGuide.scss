@@ -1,0 +1,93 @@
+$color_primary: #07a81e;
+$color_primary-dark: #068e19;
+$color_secondary: #333333;
+$color_secondary_dark: #1b1b1b;
+$color_secondary_light: #bbbbbb;
+$color_secondary_ultra_light: #eeeeee;
+$color_secondary_font_light: #888888;
+$color_highlight: #dde00b;
+$color_home_bg: #1a1a1a;
+$color_link: #0b67e0;
+$color_error: #af0000;
+$color_danger_button: #ffdbdb;
+$color_danger_button_dark: #ebc2c2;
+
+$color_neutral_white: #ffffff;
+
+$font_h1: 28px;
+$font_h2: 24px;
+$font_title: 20px;
+$font_content: 16px;
+$font_caption: 14px;
+$font_caption2: 12px;
+$font_extraSmall: 10px;
+
+$font_weight_bold: 600;
+
+@mixin h1_title {
+  margin: 0;
+  padding: 0;
+  font-size: $font_h1;
+  color: $color_secondary;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  border-bottom: 1px solid $color_primary;
+  margin-bottom: 20px;
+}
+
+@mixin h2_title {
+  margin: 0;
+  padding: 0;
+  font-size: $font_h2;
+  color: $color_secondary;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+}
+
+@mixin h2_title_line {
+  margin: 0;
+  padding: 0;
+  font-size: $font_h2;
+  color: $color_secondary;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $color_primary;
+}
+
+@mixin h3_title_tag {
+  margin: 0;
+  font-size: $font_content;
+  font-weight: $font_weight_bold;
+  background-color: $color_primary;
+  color: $color_neutral_white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  display: inline;
+  border-radius: 4px;
+}
+
+@mixin h3_title {
+  margin: 0;
+  font-size: $font_title;
+  color: $color_secondary;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+@mixin content {
+  font-size: $font_content;
+  color: $color_secondary;
+  margin: 0;
+  padding: 0;
+}
+
+.linkStyle {
+  color: $color_link;
+  text-decoration: none;
+}
+.linkStyle:hover {
+  text-decoration: none;
+}
