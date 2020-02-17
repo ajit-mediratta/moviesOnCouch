@@ -1,10 +1,12 @@
+@import "../../styles/glueGuide";
+
 .navBar {
-  width: 100%;
-  height: 64px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #212121;
+  width: 100%;
+  height: 64px;
+  background-color: $color_neutral_blackBG;
   z-index: 1;
 }
 .navBarContent {
@@ -15,10 +17,10 @@
   float: left;
 }
 .navLabel {
-  font-size: 24px;
-  color: #fff;
-  padding: 20px 24px;
   display: inline-block;
+  font-size: $font_h1;
+  color: $color_neutral_white;
+  padding: 20px 24px;
 }
 .navLabelWithBack {
   padding-left: 0;
@@ -28,25 +30,25 @@
   position: absolute;
   top: 2px;
   right: 0;
-  font-size: 28px;
+  font-size: $icon_size1;
+  color: $color_neutral_white;
   padding: 18px 24px;
-  color: #fff;
 }
 .navBackIcon {
-  font-size: 24px;
-  position: inherit;
   display: inline-block;
+  position: inherit;
+  font-size: $icon_size1;
 }
 .navSideOverlay {
-  background-color: #fff;
-  opacity: 0;
+  display: none;
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color_neutral_white;
+  opacity: 0;
   z-index: 1;
-  display: none;
 }
 .sideOverlayShow {
   display: block;
@@ -56,19 +58,19 @@
 }
 .navSideMenu {
   position: fixed;
+  top: 64px;
+  right: -225px;
   width: 200px;
   height: 100%;
-  top: 64px;
-  background-color: #fff;
-  font-size: 18px;
-  right: -225px;
+  font-size: $font_h2;
+  background-color: $color_neutral_white;
+  box-shadow: $shadow_style2;
+  padding: 10px;
+  z-index: 1;
   -webkit-transition: right 0.5s ease-out;
   -moz-transition: right 0.5s ease-out;
   -o-transition: right 0.5s ease-out;
   transition: right 0.5s ease-out;
-  z-index: 1;
-  padding: 10px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
 }
 .sideMenuShow {
   right: 0;
@@ -80,28 +82,28 @@
 .menuItem:active,
 .menuItem:focus,
 .menuItem:active:focus {
-  color: #212121;
-  text-decoration: none;
-  padding: 10px;
   display: block;
+  text-decoration: none;
+  color: $color_neutral_blackBG;
+  padding: 10px;
 }
 .menuItem:hover {
-  background-color: #eee;
+  background-color: $color_neutral_grey_light;
 }
 .subheader,
 .subheader:active,
 .subheader:focus,
 .subheader:active:focus {
-  font-size: 24px;
+  display: block;
+  font-size: $font_h1;
   text-decoration: none;
   padding: 10px;
-  display: block;
 }
 .divider {
-  height: 1px;
-  background-color: #ddd;
   width: 100%;
-  margin: 5px;
+  height: 1px;
+  background-color: $color_neutral_grey;
+  margin: 6px;
 }
 .onNavMenu {
   display: none;
@@ -118,13 +120,13 @@
   }
 
   .onNavMenu {
-    overflow: auto;
-    text-align: right;
     display: block;
     position: absolute;
     right: 10px;
     top: 10px;
-    font-size: 18px;
+    overflow: auto;
+    font-size: $font_h2;
+    text-align: right;
     li {
       float: left;
     }
@@ -133,9 +135,10 @@
   .menuItem:active,
   .menuItem:focus,
   .menuItem:active:focus {
-    color: #fff;
+    color: $color_neutral_white;
   }
   .menuItem:hover {
-    color: #aaa;
+    background-color: transparent;
+    color: $color_neutral_grey;
   }
 }

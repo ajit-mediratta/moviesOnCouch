@@ -74,7 +74,7 @@ class Detail extends React.Component {
                                 <div className={ css.heading1 }>{releaseDate.getFullYear()}</div>
                                 <div className={ css.heading2 }>{movie.runtime} min</div>
                                 <div className={ css.heading4 }>{movie.vote_average}/10</div>
-                                <div className={ `${ css.primaryBtn } ${ css.btnMarkFav }` }>Mark as favorite</div>
+                                <div className={ css.btnMarkFav }>Mark as favorite</div>
                             </div>
                             <div className={ css.clear }></div>
                         </div>

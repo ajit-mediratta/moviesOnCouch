@@ -9,7 +9,7 @@ import config from '../../../../config';
 import css from './Home.scss';
 
 const preFetchData = (store, params) => {
-    return store.dispatch(fetchMovies(params.split('/movies/')[1]));
+    return store.dispatch(fetchMovies(params.split('/movies/')[1], 1));
 };
 
 class Home extends React.Component {
@@ -35,6 +35,10 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            imageSize: config.images.resolutions.medium
+        };
+
         this.imageSize = config.images.resolutions.medium;
         this.page = 1;
     }
@@ -47,17 +51,9 @@ class Home extends React.Component {
         }
 
         const windowWidth = window.innerWidth;
-        if (windowWidth <= 480) {
-            this.imageSize = config.images.resolutions.small;
-        }
-        else if (windowWidth > 481 && windowWidth <= 768) {
-            this.imageSize = config.images.resolutions.medium;
-        }
-        else if (windowWidth > 769 && windowWidth <= 1024) {
-            this.imageSize = config.images.resolutions.medium;
-        }
-        else if (windowWidth > 1025) {
-            this.imageSize = config.images.resolutions.large;
+
+        if (windowWidth >= 1025) {
+            this.setImageSize(config.images.resolutions.large);
         }
 
         this.storeHeaderInfo();
@@ -71,6 +67,12 @@ class Home extends React.Component {
             fetchMovies(match.params.type, this.page);
         }
         this.storeHeaderInfo();
+    }
+
+    setImageSize(imageSize) {
+        this.setState({
+            imageSize
+        });
     }
 
     storeHeaderInfo() {
@@ -101,7 +103,7 @@ class Home extends React.Component {
             returnObj = movies.results.map(movie => (
                 <div className={ css.imageWrapper } key={movie.id} onClick={ this.redirectToMovieDetail(movie.id) }>
                     <div className={ css.imageContainer }>
-                        <img alt={movie.title} src={`${config.images.baseUrl}${this.imageSize}/${movie.poster_path}`} className={ css.itemImage } />
+                        <img alt={movie.title} src={`${config.images.baseUrl}${this.state.imageSize}/${movie.poster_path}`} className={ css.itemImage } />
                     </div>
                 </div>
             ));

@@ -1,3 +1,5 @@
+@import "../../styles/glueGuide";
+
 .contentSection {
   width: 100%;
 }
@@ -7,31 +9,30 @@
 .imageWrapper {
   display: table;
   float: left;
-  margin-right: 2px;
   width: 49%;
+  margin-right: 2px;
 }
 .imageContainer {
-  height: 278px;
-  min-height: 278px;
-  max-height: 278px;
-  background-color: #fff;
   display: table-cell;
   vertical-align: middle;
+  height: 231px;
+  min-height: 231px;
+  max-height: 231px;
   text-align: center;
+  background-color: $color_neutral_white;
 }
 .itemImage {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
 }
 .loadMoreButton {
-  font-size: 32px;
-  color: #212121;
   display: block;
+  position: relative;
   width: 40px;
+  font-size: $font_title;
+  color: $color_neutral_blackBG;
+  cursor: pointer;
   padding: 10px;
   margin: 20px auto;
-  position: relative;
-  cursor: pointer;
 }
 @media all and (min-width: 1281px) {
   .imageWrapper {
@@ -59,16 +60,42 @@
   .imageWrapper {
     width: 24.5%;
   }
+  .imageContainer {
+    height: 278px;
+    min-height: 278px;
+    max-height: 278px;
+  }
 }
 
 @media all and (min-width: 641px) and (max-width: 768px) {
   .imageWrapper {
-    width: 32%;
+    width: 24.5%;
+  }
+  .imageContainer {
+    height: 240px;
+    min-height: 240px;
+    max-height: 240px;
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 640px) {
+@media all and (min-width: 541px) and (max-width: 640px) {
   .imageWrapper {
     width: 32%;
+  }
+  .imageContainer {
+    height: 263px;
+    min-height: 263px;
+    max-height: 263px;
+  }
+}
+
+@media all and (min-width: 421px) and (max-width: 540px) {
+  .imageWrapper {
+    width: 32%;
+  }
+  .imageContainer {
+    height: 205px;
+    min-height: 205px;
+    max-height: 205px;
   }
 }
