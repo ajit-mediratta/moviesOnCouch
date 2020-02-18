@@ -13,15 +13,15 @@ Movies-On-Couch project is a React based project powered by [THE MOVIES DB](http
 ```
 
 #### Screenshots - Mobile
-<kbd>![Movies On Couch](sample1_home_mobile.png)</kbd>
-<kbd>![Movies On Couch](sample2_home_mobile.png)</kbd>
+<kbd>![Movies On Couch](sample/sample1_home_mobile.png)</kbd>
+<kbd>![Movies On Couch](sample/sample2_home_mobile.png)</kbd>
 -----------------------------
-<kbd>![Movies On Couch](sample3_home_mobile.png)</kbd>
-<kbd>![Movies On Couch](sample4_detail_mobile.png)</kbd>
+<kbd>![Movies On Couch](sample/sample3_home_mobile.png)</kbd>
+<kbd>![Movies On Couch](sample/sample4_detail_mobile.png)</kbd>
 #### Screenshots - Desktop
-<kbd>![Movies On Couch](sample5_home_desktop.png)</kbd>
+<kbd>![Movies On Couch](sample/sample5_home_desktop.png)</kbd>
 -----------------------------
-<kbd>![Movies On Couch](sample6_detail_desktop.png)</kbd>
+<kbd>![Movies On Couch](sample/sample6_detail_desktop.png)</kbd>
 
 
 
