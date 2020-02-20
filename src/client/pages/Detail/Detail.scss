@@ -57,6 +57,11 @@
   width: 100px;
   margin-top: 16px;
 }
+.btnMarkFavRed {
+  @include style_primary_red_button;
+  width: 100px;
+  margin-top: 16px;
+}
 .dividor {
   @include style_dividor;
 }

@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import { fetchMovieDetail } from '../../actions/movieDetail';
 import { storeHeaderInfo } from '../../actions/headerInfo';
+import { markAsFavourite } from '../../actions/markFav';
 import config from '../../../../config';
 import css from './Detail.scss';
 
@@ -49,9 +50,13 @@ class Detail extends React.Component {
         });
     }
 
+    markFav = () => {
+        this.props.markAsFavourite(this.props.match.params.id);
+    }
+
     renderDetails() {
         let returnObj = '';
-        const { movie } = this.props;
+        const { movie, favouriteMovies } = this.props;
         const releaseDate = new Date(movie.release_date);
 
         if (movie.id) {
@@ -74,7 +79,7 @@ class Detail extends React.Component {
                                 <div className={ css.heading1 }>{releaseDate.getFullYear()}</div>
                                 <div className={ css.heading2 }>{movie.runtime} min</div>
                                 <div className={ css.heading4 }>{movie.vote_average}/10</div>
-                                <div className={ css.btnMarkFav }>Mark as favorite</div>
+                                <div className={ favouriteMovies[this.props.match.params.id] ? css.btnMarkFavRed : css.btnMarkFav } onClick={ this.markFav }>Mark as favorite</div>
                             </div>
                             <div className={ css.clear }></div>
                         </div>
@@ -126,14 +131,16 @@ class Detail extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        movie: state.movie
+        movie: state.movie,
+        favouriteMovies: state.favouriteMovies
     };
 };
 
 const mapDispachToProps = dispatch => {
     return {
         fetchMovieDetail: id => dispatch(fetchMovieDetail(id)),
-        storeHeaderInfo: info => dispatch(storeHeaderInfo(info))
+        storeHeaderInfo: info => dispatch(storeHeaderInfo(info)),
+        markAsFavourite: id => dispatch(markAsFavourite(id))
     };
 };
 

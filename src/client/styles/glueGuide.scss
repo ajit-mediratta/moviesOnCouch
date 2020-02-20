@@ -3,6 +3,8 @@ $color_primary_light: #86e4db;
 $color_secondary: #747474;
 $color_secondary_dark: #000000;
 
+$color_warning: #af0000;
+
 $color_neutral_blackBG: #212121;
 $color_neutral_grey: #6a6767;
 $color_neutral_grey_light: #eeeeee;
@@ -67,6 +69,16 @@ $shadow_style2: -2px 0 4px rgba(0,0,0,0.25);
   color: $color_secondary;
   border: 1px solid $color_primary;
   background-color: $color_primary_light;
+  padding: 6px;
+}
+@mixin style_primary_red_button {
+  text-align: center;
+  font-size: $font_h4;
+  text-transform: uppercase;
+  line-height: $font_h3;
+  color: $color_neutral_white;
+  border: 1px solid $color_warning;
+  background-color: $color_warning;
   padding: 6px;
 }
 @mixin style_dividor {
