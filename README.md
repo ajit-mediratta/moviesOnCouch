@@ -2,7 +2,7 @@
 
 Movies-On-Couch project is a React based project powered by [THE MOVIES DB](https://developers.themoviedb.org/3/getting-started/introduction). Project also leverages the server-side-rendering for best SEO performance.
 
-### Features
+### Feature
 ```sh
 - Server-side Rendering
 - React-Router
