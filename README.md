@@ -1,3 +1,11 @@
+### Services - bffClient
+
+#### `fetchEligibility` Usage
+
+This function takes in two arguments. 
+- Object containing followign keys `userSession`, `salesTransactionId`, `selectedSku`
+- String `baseUrl`
+
 # Movies On Couch
 
 Movies-On-Couch project is a React based project powered by [THE MOVIES DB](https://developers.themoviedb.org/3/getting-started/introduction). Project also leverages the server-side-rendering for best SEO performance.
